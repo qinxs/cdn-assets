@@ -64,6 +64,11 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
+@media screen and (min-width: 680px) {
+  body {
+    background-image: url("https://cdn.jsdelivr.net/gh/qinxs/cdn-assets/img/rip_jobs.png");
+  }
+}
 body.modal-active {
   overflow: hidden;
 }
