@@ -2812,8 +2812,8 @@ div.gallery.stretch>p img {
 }
 .article kbd {
   border-radius: 2px;
-  border: 1px solid #e7e7e7;
-  background: #f6f6f6;
+  border: 1px solid #f1e3e6;
+  background: #fbf7f8;
   padding-left: 4px;
   padding-right: 4px;
   transition: all 0.28s ease;
@@ -2979,9 +2979,10 @@ div.gallery.stretch>p img {
   padding: 3px 4px 1px 4px;
   vertical-align: middle;
   font-size: 0.8125rem;
-  background: #f6f6f6;
+  color: #ff7600;
+  background: #fbf7f8;
   border-radius: 2px;
-  border: 1px solid #e7e7e7;
+  border: 1px solid #f1e3e6;
 }
 @media screen and (max-width: 500px) {
   .article ul,
@@ -5146,6 +5147,20 @@ ul.list-v >li>a.active {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   line-height: 0;
+}
+.widget.blogger .content >.avatar.circle {
+  border-radius: 100%;
+  width: 128px;
+  height: 128px;
+  margin-top: 32px;
+  margin-bottom: 0.5rem;
+}
+.widget.blogger .content >.avatar.circle img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 @media screen and (max-width: 768px) {
   .widget.blogger .content >.avatar {
