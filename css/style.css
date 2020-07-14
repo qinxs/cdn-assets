@@ -2892,14 +2892,23 @@ div.gallery.stretch>p img {
   margin-right: 5px;
 }
 .article blockquote {
+  background: rgba(100,100,100,0.051);
+  padding: 0.2em 16px;
+  color: #646464;
+  border-left: 3px solid #d3d3d3;
+  border-radius: 3px;
+}
+.article .article_footer blockquote {
+  padding: 0.6rem 16px 0.5rem 16px;
   background: #e8f4fd;
-  border-left: 4px solid #2196f3;
+  border-width: 0 4px;
+  border-style: solid;
+  border-color: #2196f3;
   border-radius: 4px;
 }
 .article blockquote {
   position: relative;
   width: 100%;
-  padding: 0.6rem 16px 0.5rem 16px;
   transition: all 0.28s ease;
   -moz-transition: all 0.28s ease;
   -webkit-transition: all 0.28s ease;
