@@ -2983,7 +2983,7 @@ div.gallery.stretch>p img {
   font-family: Menlo, UbuntuMono, Monaco, monospace, courier, sans-serif;
 }
 .article code:not([class]) {
-  padding: 3px 4px 1px 4px;
+  padding: 3px 4px 3px 4px;
   vertical-align: middle;
   font-size: 0.8125rem;
   color: #ff7600;
