@@ -17,7 +17,7 @@ cat << EOF
 # Ctrl+C可强制退出
 EOF
 
-rn=`echo $(head -20 /dev/urandom | cksum | cut -f1 -d " ") % 100 | bc`
+rn=$((`head -20 /dev/urandom | cksum | cut -f1 -d " "` % 100))
 # echo $rn
 
 echoColor(){
