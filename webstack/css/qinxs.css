@@ -98,6 +98,9 @@ div.tooltip-inner {
   border-color: #2188ff;
   box-shadow: 0 0 5px 0px rgba(71, 158, 245, 0.5);
 }
+input::placeholder {
+  font-size: 15px !important;
+}
 input::-webkit-input-placeholder{
   padding-top: 4px;
   line-height: normal;
