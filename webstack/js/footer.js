@@ -46,6 +46,12 @@ $(document).ready(function () {
       easing: "swing"
     });
   });
+  $("div.go-up").click(function (e) {
+    e.preventDefault();
+    $('body, html').animate({
+      scrollTop: 0
+    }, 500);
+  });
   return false;
 });
 
@@ -60,6 +66,7 @@ $("a.smooth").click(function (e) {
   href = $(this).attr("href");
   pos = $(href).position().top - 30;
 });
+
 (function () {
   if (document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") === '') {
     if (new Date().getHours() > 22 || new Date().getHours() < 6) {
