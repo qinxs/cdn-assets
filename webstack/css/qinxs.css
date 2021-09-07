@@ -99,13 +99,13 @@ div.tooltip-inner {
   box-shadow: 0 0 5px 0px rgba(71, 158, 245, 0.5);
 }
 input::placeholder {
-  font-size: 15px !important;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 input::-webkit-input-placeholder{
   padding-top: 4px;
   line-height: normal;
-  font-size: 12px;
-  letter-spacing: 1px;
+  font-size: .8em;
   color: #ccc;
 }
 .search-btn{
@@ -327,12 +327,6 @@ body.night .xe-comment p {
 }
 
 body.night .box2:hover {
-  box-shadow: 0 26px 40px -24px rgb(255, 255, 255);
-  -webkit-box-shadow: 0 26px 40px -24px rgba(130, 130, 130, 0.13);
-  -moz-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, 0.3);
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.1, 0.14, 1.43);
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease-out;
   background-color: #232323 !important;
 }
@@ -461,6 +455,7 @@ footer.main-footer {
   border-radius: 15% !important;
   background: rgba(44,46,47,.05) !important;
   box-shadow: 0 1px 3px rgba(18,18,18,.1);
+  opacity: 0;
 }
 
 .go-up:hover {
@@ -526,6 +521,11 @@ footer.main-footer {
   }
   .main-content {
     top: 90px;
+  }
+  .box2:hover{
+    transition:all .3s ease-out !important;
+    box-shadow: none !important;
+    background-color: #e1e3e3 !important;
   }
   div.tooltip {
     display: none !important;

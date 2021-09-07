@@ -46,12 +46,27 @@ $(document).ready(function () {
       easing: "swing"
     });
   });
-  $("div.go-up").click(function (e) {
+  $(".go-up").click(function (e) {
     e.preventDefault();
     $('body, html').animate({
       scrollTop: 0
     }, 500);
   });
+
+  var obtn = document.querySelector('.go-up');
+  var clientHeight = document.documentElement.clientHeight;   // 可视区域的高度
+
+  window.onscroll = function(){
+      // 滚动条的滚动高度
+      var osTop = document.documentElement.scrollTop || document.body.scrollTop; 
+
+      if(osTop >= clientHeight * 0.8){
+          obtn.style.opacity = 1;
+      } else {
+          obtn.style.opacity = 0;
+      }
+  }
+
   return false;
 });
 
