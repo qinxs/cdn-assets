@@ -6,6 +6,7 @@
 import sys
 import json
 import requests
+import time
 
 
 def clean_cache():
@@ -17,7 +18,9 @@ def clean_cache():
     try:
         for file in sys.argv[2:]:
             while True:
-                res = s.get(url_purge + file).json()
+                for i in range(3):
+                    res = s.get(url_purge + file).json()
+                    time.sleep(0.3)
                 # print(res)
                 if res["status"] == "finished":
                     print("成功：", url_cdn + file)
