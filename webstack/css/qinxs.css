@@ -443,6 +443,7 @@ body.night footer a {
 footer.main-footer {
   margin-top: 80px !important;
   padding: 18px 30px !important;
+  user-select: text;
 }
 .go-up{
   position: fixed !important;
