@@ -46,10 +46,6 @@ $(document).ready(function () {
       easing: "swing"
     });
   });
-  $('[data-toggle="tooltip"]').tooltip({
-     animation: true,
-     delay: {show: 500, hide: 100}
-   });
   $(".go-up").click(function (e) {
     e.preventDefault();
     $('body, html').animate({
