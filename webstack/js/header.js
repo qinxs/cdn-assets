@@ -260,12 +260,19 @@ function search() {
 
 //夜间模式切换
 function switchNightMode() {
+    var setCookie = function(name,value,days){  
+      var expires = new Date(); 
+      expires.setTime(expires.getTime() + days*24*60*60*1000);
+      document.cookie = name + "="+ escape(value) + ";expires=" + expires.toGMTString();
+    }
     var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
     if (night == '0') {
         document.body.classList.add('night');
-        document.cookie = "night=1;path=/"
+        // document.cookie = "night=1;path=/"
+        setCookie('night', 1, 365)
     } else {
         document.body.classList.remove('night');
-        document.cookie = "night=0;path=/"
+        // document.cookie = "night=0;path=/";
+        setCookie('night', 0, 365)
     }
 }
