@@ -445,6 +445,7 @@ footer.main-footer {
   padding: 18px 30px !important;
   user-select: text;
 }
+
 .go-up{
   position: fixed !important;
   right: 12px !important;
@@ -456,11 +457,8 @@ footer.main-footer {
   width: 36px;
   height: 36px;
   border-radius: 15% !important;
-  background: rgba(44,46,47,.05) !important;
-  box-shadow: 0 1px 3px rgba(18,18,18,.1);
   opacity: 0;
 }
-
 .go-up:hover {
   background: #ccc !important;
 }
@@ -502,15 +500,18 @@ footer.main-footer {
     position: fixed !important;
     z-index: 999 !important;
   }
+  .sidebar-menu.fixed {
+    border-top: 2px solid #f36838;
+  }
   .user-info-navbar {
     position: fixed !important;
     z-index: 999 !important;
     right: 30px !important;
     left: 30px !important;
-    top: 90px;
+    top: 85px;
   }
   .logo-env {
-    padding: 10px !important;
+    padding: 6px 10px !important;
   }
   .logo img {
     height: 40px;
